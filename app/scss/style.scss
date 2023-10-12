@@ -55,7 +55,7 @@ html {
         local('Lexend-Regular'),
         url('../fonts/Lexend-Regular.woff2') format('woff2'),
         url('../fonts/Lexend-Regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -91,6 +91,7 @@ html {
     background-color: #110A1D;
     font-size: 16px;
     font-family: 'Lexend-Regular';
+    font-weight: 400;
     min-height: 100vh;
     flex-direction: column;
     position: relative;
@@ -461,13 +462,13 @@ html {
 }
 
 .banner__blog-inner {
+  border: 3px solid #478bf9;
   border-radius: 100px;
   overflow: hidden;
 }
 
 .banner__blog-box {
   height: 595px;
-  border: 3px solid #478BF9;
   border-radius: 100px;
   padding-top: 24px;
   background-color: rgba(255, 255, 255, 0.12);
@@ -519,12 +520,16 @@ html {
   margin-left: 24px;
   max-width: 467px;
   border-radius: 196px;
-  background-color: #478BF9;
+  background-color: #1E1231;
   margin-bottom: 16px;
+}
+.banner__blog-news:first-child {
+  background-color: #478BF9;
 }
 
 .banner__blog-content {
   font-family: 'Lexend-Regular',sans-serif;
+  font-weight: 400;
   font-size: 24px;
   padding: 16px 64px 0 64px;
   margin-bottom: 14px;
@@ -533,6 +538,7 @@ html {
 .banner__blog-date {
   font-family: 'FuturaPT-Medium',sans-serif;
   font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
   padding: 0 64px 16px 64px;
 }
 
@@ -639,6 +645,9 @@ html {
 }
 
 @media(max-width: 1400px) {
+  .container {
+    padding: 0 10px;
+  }
   .header__button-burger {
     z-index: 10;
     display: block;
@@ -798,6 +807,7 @@ html {
   .banner__blog-box a {
     font-size: 16px;
     line-height: 20px;
+    font-weight: 500;
   }
   .banner__button {
     padding: 15px 50px;
@@ -812,6 +822,7 @@ html {
     margin-right: 16px;
   }
   .banner__blog-inner {
+    border: 3px solid #478bf9;
     border-radius: 50px;
   }
   .banner__blog-box {
@@ -824,9 +835,6 @@ html {
   .banner__blog-news {
     border-radius: 40px;
 
-  }
-  .banner__blog-box {
-    border: 3px solid #478bf9;
   }
   .simplebar-track.simplebar-vertical {
     width: 4px;
